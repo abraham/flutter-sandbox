@@ -1,13 +1,14 @@
+dist: xenial
 os:
   - linux
-sudo: false
+# sudo: false
 addons:
   apt:
-    sources:
-      - ubuntu-toolchain-r-test
+    # sources:
+    #   - ubuntu-toolchain-r-test
     packages:
       - libstdc++6
-      - fonts-droid
+#       - fonts-droid
 before_script:
   - git clone https://github.com/flutter/flutter.git -b beta
   - ./flutter/bin/flutter doctor
