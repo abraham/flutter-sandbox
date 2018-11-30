@@ -31,6 +31,5 @@ void main() {
     await tester.pumpWidget(MyApp());
 
     expect(find.text('Flutter Demo Home Page'), findsOneWidget);
-    expect(find.text('Nope'), findsOneWidget);
   });
 }
