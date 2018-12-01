@@ -1,11 +1,16 @@
 language: dart
 dist: xenial
 install: echo "skipping pub get"
+addons:
+  apt:
+    packages:
+      - lib32stdc++6
 before_script:
   - git clone https://github.com/flutter/flutter.git -b beta
   - ./flutter/bin/flutter doctor
 script:
   - ./flutter/bin/flutter test
+  - ./flutter/bin/flutter analyze
 cache:
   directories:
     - $HOME/.pub-cache
