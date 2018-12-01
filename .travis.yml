@@ -1,5 +1,4 @@
 language: dart
-dist: xenial
 install: echo "skipping pub get"
 before_script:
   - git clone https://github.com/flutter/flutter.git -b beta
