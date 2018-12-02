@@ -30,6 +30,6 @@ void main() {
   testWidgets('Title', (WidgetTester tester) async {
     await tester.pumpWidget(MyApp());
 
-    expect(find.text('Flutter Demo Home Page 2'), findsOneWidget);
+    expect(find.text('Flutter Demo Home Page'), findsOneWidget);
   });
 }

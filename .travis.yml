@@ -5,9 +5,7 @@ addons:
     packages:
       - lib32stdc++6
 before_install:
-  - if [ ! -d "flutter" ]; then
-      git clone https://github.com/flutter/flutter.git -b beta;
-    fi
+  - git -C flutter pull || git clone https://github.com/flutter/flutter.git -b beta
 install:
   - ./flutter/bin/flutter doctor
 script:
